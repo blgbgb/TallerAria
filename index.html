@@ -5,86 +5,112 @@
   <title>Deportistas Discapacitados y Gerónimo Benavides</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-
- </head>
+</head>
 <body>
 
-  <div class="encabezado">
+  <header class="encabezado" role="banner">
     <h1>INCLUSIÓN EN EL DEPORTE</h1>
-  </div>
+  </header>
 
-  <div class="contenedor">
-    <div class="card">
-      <img src="imagenes/deport1.webp" alt="Marcin Oleksy" class="deport1">
-      <div class="card-content">
-        <h2>Marcin Oleksy y su Premio Puskás</h2>
-        <p class="hidden-text">
-          Marcin Oleksy, un futbolista polaco que perdió una pierna en un accidente laboral, se convirtió en el primer jugador amputado en ganar el prestigioso Premio Puskás en 2023. Su increíble gol de chilena para el equipo de Warta Poznań en la liga de fútbol amputado dejó a todos boquiabiertos y demostró que las limitaciones físicas no son un obstáculo para la grandeza en el deporte.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
+  <main class="contenedor" role="main">
+    
+    <section aria-label="Historias de deportistas discapacitados">
 
-    <div class="card">
-      <img src="imagenes/deport2.jpg" alt="Natalie du Toit" class="deport2">
-      <div class="card-content">
-        <h2>Natalie du Toit, una nadadora imparable</h2>
-        <p class="hidden-text">
-          Natalie du Toit es una nadadora sudafricana que perdió una pierna en un accidente de moto a los 17 años. Sin embargo, eso no la detuvo: compitió en los Juegos Olímpicos y Paralímpicos, siendo un símbolo de perseverancia y superación.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
+      <article class="card" role="article">
+        <img src="imagenes/deport1.webp" alt="Marcin Oleksy" class="deport1">
+        <div class="card-content">
+          <h2>Marcin Oleksy y su Premio Puskás</h2>
+          <p class="hidden-text">
+            Marcin Oleksy, un futbolista polaco que perdió una pierna en un accidente laboral, se convirtió en el primer jugador amputado en ganar el prestigioso Premio Puskás en 2023. Su increíble gol de chilena para el equipo de Warta Poznań en la liga de fútbol amputado dejó a todos boquiabiertos y demostró que las limitaciones físicas no son un obstáculo para la grandeza en el deporte.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle1">Ver más</button>
+        </div>
+      </article>
 
-    <div class="card">
-      <img src="imagenes/deport3.jpg" alt="Alex Zanardi" class="deport3">
-      <div class="card-content">
-        <h2>Alex Zanardi y su regreso a las pistas</h2>
-        <p class="hidden-text">
-          Alex Zanardi, ex piloto de Fórmula 1, perdió ambas piernas en un accidente en 2001. Tras su recuperación, se convirtió en campeón paralímpico de ciclismo en los Juegos de Londres 2012 y Río 2016, demostrando que nada es imposible.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
+      <article class="card" role="article">
+        <img src="imagenes/deport2.jpg" alt="Natalie du Toit" class="deport2">
+        <div class="card-content">
+          <h2>Natalie du Toit, una nadadora imparable</h2>
+          <p class="hidden-text" id="detalle2">
+            Natalie du Toit es una nadadora sudafricana que perdió una pierna en un accidente de moto a los 17 años. Sin embargo, eso no la detuvo: compitió en los Juegos Olímpicos y Paralímpicos, siendo un símbolo de perseverancia y superación.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle2">Ver más</button>
+        </div>
+      </article>
 
-    <div class="card">
-      <img src="imagenes/deport4.jpg" alt="Gerónimo Benavides en el fútbol para amputados" class="deport4">
-      <div class="card-content">
-        <h2>Gerónimo Benavides y su pasión por el fútbol</h2>
-        <p class="hidden-text">
-          Gerónimo Benavides es un futbolista argentino que, a pesar de las adversidades, nunca dejó de luchar por su pasión: el fútbol. Jugador con discapacidad, Gerónimo ha sido parte de iniciativas para ayudar a su equipo Platense y ha inspirado a muchos con su compromiso y amor por el deporte.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
+      <article class="card" role="article">
+        <img src="imagenes/deport3.jpg" alt="Alex Zanardi" class="deport3">
+        <div class="card-content">
+          <h2>Alex Zanardi y su regreso a las pistas</h2>
+          <p class="hidden-text" id="detalle3">
+            Alex Zanardi, ex piloto de Fórmula 1, perdió ambas piernas en un accidente en 2001. Tras su recuperación, se convirtió en campeón paralímpico de ciclismo en los Juegos de Londres 2012 y Río 2016, demostrando que nada es imposible.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle3">Ver más</button>
+        </div>
+      </article>
 
-    <div class="card">
-      <img src="imagenes/deport5.webp" alt="Taty Castellanos entrenando" class="deport5">
-      <div class="card-content">
-        <h2>Taty Castellanos y la inclusión en el fútbol</h2>
-        <p class="hidden-text">
-          Taty Castellanos, un jugador que siempre ha abogado por la inclusión en el deporte, ha apoyado a diferentes asociaciones que trabajan con deportistas discapacitados, demostrando que el deporte debe ser un espacio para todos.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
+      <article class="card" role="article">
+        <img src="imagenes/deport4.jpg" alt="Gerónimo Benavides en el fútbol para amputados" class="deport4">
+        <div class="card-content">
+          <h2>Gerónimo Benavides y su pasión por el fútbol</h2>
+          <p class="hidden-text" id="detalle4">
+            Gerónimo Benavides es un futbolista argentino que, a pesar de las adversidades, nunca dejó de luchar por su pasión: el fútbol. Jugador con discapacidad, Gerónimo ha sido parte de iniciativas para ayudar a su equipo Platense y ha inspirado a muchos con su compromiso y amor por el deporte.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle4">Ver más</button>
+        </div>
+      </article>
 
-    <div class="card">
-      <img src="imagenes/deport6.jpg" alt="Jonnie Peacock en plena carrera" class="deport6">
-      <div class="card-content">
-        <h2>La historia de Jonnie Peacock</h2>
-        <p class="hidden-text">
-          Jonnie Peacock es un atleta británico que perdió una pierna a causa de una enfermedad cuando era niño. Se convirtió en uno de los velocistas más destacados en los Juegos Paralímpicos, obteniendo varias medallas de oro y sirviendo como inspiración para deportistas de todo el mundo.
-        </p>
-        <button class="toggle-btn">Ver más</button>
-      </div>
-    </div>
-  </div>
+      <article class="card" role="article">
+        <img src="imagenes/deport5.webp" alt="Taty Castellanos entrenando" class="deport5">
+        <div class="card-content">
+          <h2>Taty Castellanos y la inclusión en el fútbol</h2>
+          <p class="hidden-text" id="detalle5">
+            Taty Castellanos, un jugador que siempre ha abogado por la inclusión en el deporte, ha apoyado a diferentes asociaciones que trabajan con deportistas discapacitados, demostrando que el deporte debe ser un espacio para todos.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle5">Ver más</button>
+        </div>
+      </article>
 
-  <div class="pie">
+      <article class="card" role="article">
+        <img src="imagenes/deport6.jpg" alt="Jonnie Peacock en plena carrera" class="deport6">
+        <div class="card-content">
+          <h2>La historia de Jonnie Peacock</h2>
+          <p class="hidden-text" id="detalle6">
+            Jonnie Peacock es un atleta británico que perdió una pierna a causa de una enfermedad cuando era niño. Se convirtió en uno de los velocistas más destacados en los Juegos Paralímpicos, obteniendo varias medallas de oro y sirviendo como inspiración para deportistas de todo el mundo.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle6">Ver más</button>
+        </div>
+      </article>
+
+      <article class="card" role="article">
+        <img src="imagenes/deport7.jpg" alt="Carlos Daniel Serrano en la piscina" class="deport7">
+        <div class="card-content">
+          <h2>La historia de Carlos Daniel Serrano</h2>
+          <p class="hidden-text" id="detalle7">
+            Nadador paralímpico de Bucaramanga con talla baja. Ha ganado múltiples medallas en Juegos Paralímpicos y campeonatos mundiales, destacándose por su oro en Río 2016 y su constancia como uno de los mejores del mundo en su categoría.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle7">Ver más</button>
+        </div>
+      </article>
+
+      <article class="card" role="article">
+        <img src="imagenes/deport8.jpg" alt="Leidy Ramírez sobre su bicicleta" class="deport8">
+        <div class="card-content">
+          <h2>La historia de Leidy Ramírez</h2>
+          <p class="hidden-text" id="detalle8">
+            Paraciclista colombiana que perdió una pierna en un accidente a los 22 meses. Desde 2015 compite a nivel internacional, combinando su carrera deportiva con el sueño de apoyar a otros atletas con discapacidad.
+          </p>
+          <button class="toggle-btn" aria-expanded="false" aria-controls="detalle8">Ver más</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="pie" role="contentinfo">
     <p>&copy; 2025 Historias Inspiradoras</p>
-  </div>
+  </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

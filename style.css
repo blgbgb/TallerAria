@@ -56,7 +56,9 @@ body {
 .card img.deport3,
 .card img.deport4,
 .card img.deport5,
-.card img.deport6 {
+.card img.deport6,
+.card img.deport7,
+.card img.deport8 {
   height: 250px;
 }
 
